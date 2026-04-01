@@ -1,13 +1,20 @@
 import React from 'react';
+import Logo from './Logo.jsx';
 
+/**
+ * Sección principal del hero. Usa tu logotipo y un fondo oscuro para un aspecto profesional.
+ */
 function Hero() {
   return (
-    <section className="flex flex-col items-center justify-center text-center py-20 px-4 bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-white">
-      <h2 className="text-5xl font-extrabold mb-4">¡Hola! Soy Tu Nombre</h2>
-      <p className="max-w-2xl text-lg mb-6">
-        Desarrollador web especializado en React y Tailwind CSS. Me apasiona crear interfaces elegantes y funcionales.
+    <section className="flex flex-col items-center justify-center text-center py-32 px-4 bg-gray-900 dark:bg-gray-900 text-white relative">
+      <Logo size={220} className="mb-6" />
+      <p className="max-w-xl text-lg sm:text-xl mb-8">
+        Capturando tus recuerdos más preciados con estilo profesional.
       </p>
-      <a href="#projects" className="inline-block bg-white text-purple-600 font-semibold py-2 px-6 rounded-full shadow-lg hover:bg-gray-100">
+      <a
+        href="#projects"
+        className="inline-block bg-purple-600 hover:bg-purple-500 dark:bg-purple-700 dark:hover:bg-purple-600 text-white font-semibold py-3 px-8 rounded-full transition-colors"
+      >
         Ver proyectos
       </a>
     </section>
